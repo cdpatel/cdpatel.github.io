@@ -1,8 +1,8 @@
 ---
-title:  "Welcome to Jekyll!"
-date:   2014-12-29 11:36:58
-categories: tools
-tags: jekyll
+title:  "Building my site with jekyll and bootstrap on github pages"
+date:   2014-12-30 21:00:00
+categories: technology
+tags: cms web git
 ---
 
 
