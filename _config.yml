@@ -1,0 +1,31 @@
+# Site settings
+title: artist.software
+email: chirag.software@gmail.com
+description: # this means to ignore newlines until "baseurl:"
+  A software enthusiast's personal web site to share software tips, tricks and research.
+  Also, let me know what you think of the photography.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://chirag.software" # the base hostname & protocol for your site
+twitter_username: cdpatel
+github_username:  cdpatel
+disqus_shortname: softwareartist
+linkedin_profile: www.linkedin.com/in/chiragsoftware
+comments_enabled: true
+
+# Build settings
+markdown: kramdown
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      categories: photography technology
+      tags: [landscape, portrait, computers, technology, software]
+      comments_enabled: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"	  
