@@ -5,7 +5,7 @@ description: # this means to ignore newlines until "baseurl:"
   A software enthusiast's personal web site to share software tips, tricks and research.
   Also, let me know what you think of the photography.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://chirag.software" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 twitter_username: cdpatel
 github_username:  cdpatel
 disqus_shortname: softwareartist

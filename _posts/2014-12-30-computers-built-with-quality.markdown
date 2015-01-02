@@ -1,6 +1,6 @@
 ---
 title:  "Computers built with focus on quality"
-date:   2014-12-31 21:30:00
+date:   2014-12-30 21:30:00
 categories: 
 - technology
 tags:
