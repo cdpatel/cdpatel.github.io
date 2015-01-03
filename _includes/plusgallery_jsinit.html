@@ -1,3 +1,10 @@
 <script type="text/javascript">
-	$('#plusgallery_sfl').plusGallery();
+	var loadGallery = function(elem, setId){
+		var myFlickrApiKey = 'ff7978de715f71f96ee26f034894e12c';
+		var selector = '#' + elem.id;
+		var title = $(selector).text();
+		$("#gallerywrapper").html('<br/><p>' + title + '</p>' + 
+			'<div id="plusgallery" data-api-key="' + myFlickrApiKey + '" data-userid="44972521@N06" data-type="flickr" data-album-id="' + setId + '"></div>');
+  		$('#plusgallery').plusGallery();
+  	};
 </script>

@@ -6,41 +6,54 @@ groups: navigation_main,navigation_more
 custom_css: plusgallery
 custom_js: plusgallery
 jsinit_file: plusgallery_jsinit.html
+comments_enabled: false
 ---
 
 
-<h1 class="page-heading">Gallery</h1>
+<!--h1 class="page-heading">My photography</h1-->
 
-<!--div class="panel panel-default">
-    	<div class="panel-heading">Visit to Redmond Town Center during Christmas season
-		</div>
-		<div class="panel-body">
-			<span class="label label-info">Redmond, WA, USA</span>
-				
-			<div id="plusgallery_rtc" 
-				 data-api-key="ff7978de715f71f96ee26f034894e12c" 
-				 data-userid="44972521@N06" 
-				 data-album-id="72157647640834333" 
-				 data-type="flickr">
-			</div>
-
-		</div>
-</div-->
+<!-- tabs panel taken from bootstrap template sample -->
 
 <div class="panel panel-default">
-    	<div class="panel-heading">Bellevue Snowflake lane Christmas parade and Bellevue Squaremall
+  <div class="panel-body" id="photogalleries-contentwrapper">
+    <ul class="nav nav-tabs">
+	  <li class="dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+		  Photo Galleries <span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu">
+		  <li><a id="72157649460449119" data-toggle="tab" onClick="javascript: loadGallery(this, '72157649460449119'); return false;">
+			  Bellevue Snowflake lane Christmas parade and Bellevue Squaremall
+			  </a></li>
+		  <li class="divider"></li>
+		  <li><a id="72157647640834333" data-toggle="tab" onClick="javascript: loadGallery(this, '72157647640834333'); return false;">
+			  Redmond Town Center during Christmas season
+			  </a></li>
+		  <li class="divider"></li>
+		  <li><a id="72157649250983578" data-toggle="tab" onClick="javascript: loadGallery(this, '72157649250983578'); return false;">
+			  Leavenworth Christmas lighting
+			  </a></li>
+		</ul>
+	  </li>
+	</ul>
+	<div id="myTabContent" class="tab-content">
+	  <div class="tab-pane fade active in" id="gallerywrapper">
+		  <p></p>
+		  <p>I bought a DSLR and began to learn few basics and tricks with photography and lighting.</p>
+		  <p>Take a peek at few samples in the galleries above.</p>
+	  </div>
+	  <div class="tab-pane fade" id="gallery72157649460449119">
+	  
 		</div>
-		<div class="panel-body">
-			<span class="label label-info">Bellevue, WA, USA</span>
-				
-			<div id="plusgallery_sfl" 
-				 data-api-key="ff7978de715f71f96ee26f034894e12c" 
-				 data-userid="44972521@N06" 
-				 data-album-id="72157649460449119" 
-				 data-type="flickr">
-			</div>
-
-		</div>
+	  <div class="tab-pane fade" id="gallery72157647640834333">
+		  Visit to Redmond Town Center during Christmas season
+	  </div>
+	  <div class="tab-pane fade" id="dropdown2">
+	  </div>
+	</div>
+  </div>
 </div>
+
+{% include dcomments.html %}
   
 
